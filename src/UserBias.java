@@ -15,6 +15,7 @@
  *                      is >= 20% of nTries.
  *                  Otherwise it's NOT BIASED.
  *****************************************************************************/
+
 import javax.swing.JOptionPane;
 
 public class UserBias {
@@ -24,12 +25,13 @@ public class UserBias {
         int num;
         int numEvens = 0;
         for (int count = 1; count <= numTries; count++) {
-            num = getNum(count,numTries);
+            num = getNum(count, numTries);
             numEvens = UserBiasHelper.addIfEven(num, numEvens);
         }
         UserBiasHelper.printResults(numTries, numEvens);
         System.out.println("\nTHE END");
     }
+
     //*************************************************************************
     private static int getNum(int i, int n) {
         return Integer.parseInt(JOptionPane.showInputDialog
