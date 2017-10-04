@@ -1,9 +1,8 @@
 class UserBiasHelper {
     static int addIfEven(int num, int numTries) {
-        if (num % 2==0){
-            return  numTries+1;
-        }
-        else {
+        if (num % 2 == 0) {
+            return numTries + 1;
+        } else {
             return numTries;
         }
     }
