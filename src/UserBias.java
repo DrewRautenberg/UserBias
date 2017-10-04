@@ -25,9 +25,9 @@ public class UserBias {
         int numEvens = 0;
         for (int count = 1; count <= numTries; count++) {
             num = getNum(count,numTries);
-//            numEvens = UserBiasHelper.addIfEven(num, numEvens);
+            numEvens = UserBiasHelper.addIfEven(num, numEvens);
         }
-//        UserBiasHelper.printResults(numTries, numEvens);
+        UserBiasHelper.printResults(numTries, numEvens);
         System.out.println("\nTHE END");
     }
     //*************************************************************************
